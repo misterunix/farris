@@ -13,8 +13,8 @@ func main() {
 
 	fmt.Println("Starting")
 
-	width := 512
-	height := 512
+	width := 2048
+	height := 2048
 
 	v1 := -5.0
 	v2 := 21.0
@@ -46,10 +46,12 @@ func main() {
 		r, g, b := hsl.HSLtoRGB(hue, 1.0, 0.5)
 
 		c := img.ColorAllocate(int(r), int(g), int(b))
+
+		//img.Imagefilledrectangle(0, 0, 299, 99, c);
 		img.SetPixel(int(x*w2+w1), int(y*h2+h1), c)
 	}
 	//x := math.Cos(t) + math.Cos(6.0*t)/2.0 + math.Sin(14.0*t)/3.0
 	//y := math.Sin(t) + math.Sin(6.0*t)/2.0 + math.Cos(14.0*t)/3.0
 
-	img.Png("out.png")
+	img.Png("out2.png")
 }
