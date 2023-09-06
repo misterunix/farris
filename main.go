@@ -13,11 +13,11 @@ func main() {
 
 	fmt.Println("Starting")
 
-	width := 2048
-	height := 2048
+	width := 1024
+	height := 1024
 
-	t1 := -5.0
-	t2 := 21.0
+	t1 := -3.0
+	t2 := 11.0
 	t3 := 2.0
 	t4 := 3.0
 
